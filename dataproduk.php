@@ -1,5 +1,6 @@
 <?php
 require 'koneksi.php';
+include 'koneksi.php';
 
 ?>
 
@@ -38,7 +39,7 @@ require 'koneksi.php';
             <td><?php echo $hasil['foto']?></td>
             <td><?php echo $hasil['deskripsi']?></td>
             <td>
-                <a href="editproduk.php">Edit</a> 
+                <a href="editproduk.php?edit=<?php echo $hasil['id_produk']; ?>">Edit</a> 
                 <a href= "deleteproduk.php?hapus=<?php echo $hasil['id_produk']; ?>">Hapus</a>
             </td>
         </tr>

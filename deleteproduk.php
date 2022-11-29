@@ -6,8 +6,6 @@ $id= $_GET['hapus'];
 if(isset($_GET['hapus'])){
 $delete = mysqli_query($conn,"DELETE FROM produk WHERE id_produk = '$id'");
 
-echo"<p><b> Data Berhasil dihapus</b></p>";
-
 
 };
 
